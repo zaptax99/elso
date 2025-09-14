@@ -1,16 +1,18 @@
-# Modositas 1.0
+# elso program
+# Ez a főprogram, ami importálja és használja a modulban írt függvényeket10
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import modul
 
+# Felhasználótól kérünk be két számot
+elso = int(input("Add meg az első számot: "))
+masodik = int(input("Add meg a második számot: "))
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# Használjuk a modulban definiált függvényeket
+osszeg = modul.osszead(elso, masodik)
+szorzat = modul.szoroz(elso, masodik)
 
+# Eredmények kiírása
+print(f"\nAz általad megadott számok: {elso} és {masodik}")
+print(f"Összegük: {osszeg}")
+print(f"Szorzatuk: {szorzat}")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
